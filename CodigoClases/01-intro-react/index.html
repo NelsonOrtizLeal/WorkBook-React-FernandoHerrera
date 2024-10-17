@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlaces para las librerias que utiliza React -->
+    <!-- This is what supports JSX compilation (and other transformations) -->
+    <script src="https://unpkg.com/@babel/standalone@7.10.3/babel.min.js"></script>
+
+    <!-- These are for React -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+
+    <title>ReactApp</title>
+</head>
+
+<body>
+
+    <div id="root">
+        <div id="titulo"></div>
+        <div id="subtitulo"></div>
+    </div>
+
+    <!-- Codigo JavaScript para utilizar la biblioteca de React  -->
+    <script type="text/babel">
+        const titulo = document.getElementById('titulo');
+        const subtitulo = document.getElementById('subtitulo');
+
+        const mensajeBienvenida = <h1>¡Hola Mundo Dev!</h1>;        
+        const nombre = 'Nelson Ysain Ortiz Leal';
+        const saludarPersona = <h2>Bienvenido de nuevo {nombre}</h2>
+        
+        ReactDOM.render(mensajeBienvenida, titulo);
+        ReactDOM.render(saludarPersona, subtitulo )
+    </script>
+</body>
+
+</html>
